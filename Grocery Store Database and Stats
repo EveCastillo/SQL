@@ -1,0 +1,21 @@
+/** My Store 
+Notebooks (5) 
+Pencils (2)
+Crayons (4) 
+Markers (3)
+Paper (1)
+**/
+
+CREATE TABLE store (id INTEGER PRIMARY KEY, item TEXT, price INTEGER);
+SELECT * FROM store;
+
+INSERT INTO store VALUES (1, "Notebooks", 5);
+INSERT INTO store VALUES (2, "Pencils", 2);
+INSERT INTO store VALUES (3, "Crayons", 4);
+INSERT INTO store VALUES (4, "Markers", 3);
+INSERT INTO store VALUES (5, "Paper", 1);
+SELECT * FROM store;
+
+SELECT * FROM store ORDER BY price;
+
+SELECT SUM(price) FROM store;
